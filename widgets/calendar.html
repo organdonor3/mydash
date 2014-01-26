@@ -1,0 +1,49 @@
+<li>
+	<div class="panel panel-default">
+		
+		<div class="pull-right btn-group btn-group-sm">
+			<button type="button" class="btn refresh-widget" aria-hidden="true" onclick="refreshCal();">
+				<i class="fa fa-refresh"></i>
+			</button>
+			<button type="button" class="btn remove-widget" aria-hidden="true" onclick="">
+				<i class="fa fa-eye-slash"></i>
+			</button>
+		</div>
+		
+	  <div class="panel-heading">
+	    <div class="panel-title">Calendar</div>
+	  </div>
+	  <div class="panel-body">
+	    <div id="cal" style="height: 100%; margin: 0 auto"></div>
+	  </div>
+	</div>
+	
+	
+	<script type="text/javascript">
+		
+		var refreshCal = function(){
+			 $('#cal').fullCalendar('render');
+		};
+		
+		$('#cal').fullCalendar({
+
+			// US Holidays
+			events: 'http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic',
+			eventClick: function(event) {
+				// opens events in a popup window
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				if (bool) {
+					$('#loading').show();
+				}else{
+					$('#loading').hide();
+				}
+			}
+	
+		});
+	</script>
+	
+</li>

@@ -1,0 +1,65 @@
+
+<li>
+	<div class="panel panel-default">
+		
+		<div class="pull-right btn-group btn-group-sm">
+			<button type="button" class="btn refresh-widget" aria-hidden="true" onclick="">
+				<i class="fa fa-refresh"></i>
+			</button>
+			<button type="button" class="btn remove-widget" aria-hidden="true" onclick="">
+				<i class="fa fa-eye-slash"></i>
+			</button>
+		</div>
+		
+	  <div class="panel-heading">
+	    <div class="panel-title">Table</div>
+	  </div>
+	  <div class="panel-body">
+	    <table class="table table-striped table-condensed" id="mytable">
+				<thead>
+					<tr>
+						<th>Rendering engine</th>
+						<th>Browser</th>
+						<th>Platform(s)</th>
+						<th>Engine version</th>
+						<th>CSS grade</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+				
+			</table>
+	  </div>
+	</div>
+	
+	<!-- Testing
+ 		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
+ 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+ 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"</script>
+		<script src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.0.3/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+	-->
+	
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			$('#mytable').dataTable( {
+				"sDom": '<"row"<"col-sm-6"l><"col-sm-6"f>>rt<"row"<"col-sm-6"p><"col-sm-6"i>>',
+				"bProcessing": false,
+				"bScrollCollapse": false,
+        "bPaginate": true,
+        "bLengthChange": false,
+        "bFilter": true,
+        "bSort": true,
+        "bInfo": true,
+        "bAutoWidth": false,
+				"sAjaxSource": "sources/arrays.txt"
+			} );
+		} );
+		
+	</script>
+	
+</li>
+
+

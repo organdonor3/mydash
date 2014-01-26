@@ -1,0 +1,58 @@
+
+
+body 
+{
+	padding-top: 70px;
+	font-family: 'Monda', sans-serif;
+	background-color: #004756;
+}
+
+
+
+/* Bootstrap Styles for panels */
+
+.panel{
+	width: 100%;
+	height: 100%;
+}
+
+.panel .btn-group-sm > .btn
+{
+	padding: 2px;
+}
+
+.panel-heading{
+	padding: 5px;
+	height: 26px;
+}
+
+.panel-title {
+    font-size: 8pt;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.panel-body{
+	padding: 5px; /* reduce padding */
+	height: 100%; /* fill entire panel */
+	padding-bottom: 26px; /*except space from title */
+}
+
+
+
+
+/* Gridster
+ * 
+ */
+.gridster ul {
+	list-style-type: none;
+}
+
+.gridster ul li {
+	overflow: hidden;
+}
+
+
+/* Custom */
+
+	
