@@ -1,0 +1,9 @@
+[
+	{"id":"widget-user", "src":"widgets/user.html", "size_x":1, "size_y":1, "col":1, "row":1},
+	{"id":"widget-local", "src":"widgets/local.html", "size_x":2, "size_y":1, "col":3, "row":1},
+	{"id":"widget-template", "src":"widgets/template.html", "size_x":1, "size_y":1, "col":2, "row":1},
+	{"id":"widget-calendar", "src":"widgets/calendar.html", "size_x":4, "size_y":4, "col":1, "row":2},
+	{"id":"widget-testchart", "src":"widgets/testchart.html", "size_x":3, "size_y":2, "col":5, "row":1},
+	{"id":"widget-testchart3", "src":"widgets/testchart3.html", "size_x":3, "size_y":2, "col":5, "row":3},
+	{"id":"widget-table", "src":"widgets/table.html", "size_x":5, "size_y":4, "col":1, "row":6}
+]
